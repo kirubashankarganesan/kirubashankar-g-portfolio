@@ -1,0 +1,307 @@
+/* ===========================
+        FOOTER SECTION
+=========================== */
+
+.footer-section{
+    background:#0f172a;
+    color:#fff;
+    min-height:calc(100vh - 72px);
+    display:flex;
+    align-items:center;
+    padding:55px 0 20px;
+}
+
+/* ===========================
+          HEADING
+=========================== */
+
+.footer-heading{
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.footer-heading p{
+    color:#60a5fa;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.footer-heading h2{
+    font-size:clamp(2.3rem,4vw,3.5rem);
+    font-weight:800;
+    color:#fff;
+}
+
+/* ===========================
+        MAIN CARD
+=========================== */
+
+.footer-card{
+
+    background:#1e293b;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.28);
+
+}
+
+.footer-card h3{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+/* ===========================
+      CONTACT BOXES
+=========================== */
+
+.contact-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    margin-bottom:12px;
+
+    background:#334155;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.contact-box:hover{
+
+    background:#3d5068;
+
+    transform:translateY(-4px);
+
+}
+
+.contact-icon{
+
+    font-size:24px;
+
+    color:#60a5fa;
+
+    flex-shrink:0;
+
+}
+
+.contact-box small{
+
+    display:block;
+
+    color:#cbd5e1;
+
+    font-size:.8rem;
+
+    margin-bottom:2px;
+
+}
+
+.contact-box h6{
+
+    margin:0;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+/* ===========================
+        SOCIAL LINKS
+=========================== */
+
+.social-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    margin-bottom:12px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:#334155;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.social-box svg{
+
+    font-size:24px;
+
+    color:#60a5fa;
+
+}
+
+.social-box:hover{
+
+    background:#3d5068;
+
+    color:#fff;
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+      FOOTER BOTTOM
+=========================== */
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    padding-top:16px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.95rem;
+
+}
+
+/* ===========================
+        BACK TO TOP
+=========================== */
+
+.back-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#60a5fa;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.back-top:hover{
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+.footer-section{
+
+    min-height:auto;
+
+    padding:60px 0 25px;
+
+}
+
+.footer-card{
+
+    padding:22px;
+
+}
+
+.footer-heading h2{
+
+    font-size:2.3rem;
+
+}
+
+.footer-card h3{
+
+    font-size:1.7rem;
+
+}
+
+.footer-bottom{
+
+    flex-direction:column;
+
+    gap:12px;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.footer-heading h2{
+
+    font-size:2rem;
+
+}
+
+.contact-box{
+
+    padding:12px 14px;
+
+}
+
+.social-box{
+
+    padding:12px 14px;
+
+}
+
+.contact-icon{
+
+    font-size:22px;
+
+}
+
+}
