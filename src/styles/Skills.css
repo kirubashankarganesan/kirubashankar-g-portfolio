@@ -165,12 +165,24 @@
    RESPONSIVE
 =========================== */
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .skills-section {
-    padding: 90px 0 60px;
+    min-height: auto;
+    padding: 95px 15px 55px;
   }
 
-  .section-title {
+  .skill-card {
+    min-height: 300px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 90px 15px 60px;
+  }
+
+  .skills-section .section-title {
     font-size: 2.4rem;
     margin-bottom: 35px;
   }
@@ -187,6 +199,57 @@
   .skill-badge {
     font-size: 14px;
     padding: 10px 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills-section {
+    padding: 90px 12px 45px;
+  }
+
+  .skills-section .section-title {
+    font-size: 2.2rem;
+  }
+
+  .skill-card {
+    padding: 24px 16px;
+    border-radius: 18px;
+    min-height: auto;
+  }
+
+  .skill-card h4 {
+    font-size: 1.45rem;
+    margin-bottom: 20px;
+  }
+
+  .skill-badge {
+    width: 100%;
+    justify-content: center;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-section {
+    padding: 80px 10px 40px;
+  }
+
+  .skills-section .section-title {
+    font-size: 1.95rem;
+  }
+
+  .skill-card {
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+
+  .skill-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .skill-badge {
+    font-size: 0.88rem;
+    padding: 9px 12px;
   }
 }
 

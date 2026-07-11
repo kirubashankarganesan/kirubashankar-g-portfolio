@@ -258,33 +258,139 @@
         RESPONSIVE
 =========================== */
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2.8rem;
+@media (max-width: 991px) {
+  .internship-section {
+    min-height: auto;
+    padding: 95px 18px 55px;
   }
 
   .internship-card {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-section {
+    padding: 80px 15px 50px;
+  }
+
+  .internship-section .section-title {
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin-bottom: 35px !important;
+  }
+
+  .internship-card {
+    max-width: 100%;
     padding: 22px;
+    border-radius: 20px;
+  }
+
+  .company-header {
+    gap: 14px;
+  }
+
+  .company-header h3 {
+    font-size: 1.75rem;
+  }
+
+  .project-row {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .internship-section {
+    padding: 90px 12px 45px;
+  }
+
+  .internship-section .section-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .internship-card {
+    padding: 20px 16px;
+    border-radius: 18px;
   }
 
   .company-header {
     flex-direction: column;
-
     align-items: flex-start;
+    gap: 12px;
+  }
+
+  .company-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .company-header h3 {
+    font-size: 1.45rem;
+    line-height: 1.2;
+  }
+
+  .role-badge {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+
+  .internship-description {
+    font-size: 0.98rem;
+  }
+
+  .internship-skills {
+    gap: 8px;
+  }
+
+  .skill-badge {
+    font-size: 0.92rem;
   }
 
   .project-row {
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 15px;
   }
 
   .github-btn {
     width: 100%;
-
     justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .internship-section {
+    padding: 80px 10px 40px;
+  }
+
+  .internship-section .section-title {
+    font-size: 1.9rem;
+  }
+
+  .internship-card {
+    padding: 18px 12px;
+    border-radius: 16px;
+  }
+
+  .company-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .role-badge,
+  .skill-badge,
+  .project-name,
+  .github-btn {
+    font-size: 0.88rem;
+  }
+
+  .internship-skills {
+    gap: 7px;
+  }
+
+  .skill-badge {
+    padding: 6px 8px;
   }
 }
 

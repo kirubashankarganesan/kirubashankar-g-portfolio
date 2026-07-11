@@ -124,13 +124,24 @@
       RESPONSIVE
 =========================== */
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .about-section {
+    min-height: auto;
+    padding: 95px 15px 55px;
+  }
 
+  .about-section .section-title {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 768px) {
   .about-section {
     padding: 80px 15px;
   }
 
-  .section-title {
+  .about-section .section-title {
     font-size: 2.8rem;
   }
 
@@ -148,6 +159,61 @@
 
   .education-item {
     padding: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-section {
+    padding: 90px 12px 45px;
+  }
+
+  .about-section .section-title {
+    font-size: 2.3rem;
+  }
+
+  .about-card {
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .about-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-content p {
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .education-item h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-section {
+    padding: 80px 10px 40px;
+  }
+
+  .about-section .section-title {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    padding: 16px 12px;
+    border-radius: 16px;
+  }
+
+  .about-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-content p {
+    font-size: 0.92rem;
+  }
+
+  .education-item {
+    padding: 14px 12px;
   }
 }
 

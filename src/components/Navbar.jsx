@@ -4,6 +4,17 @@ import "../styles/Navbar.css";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const closeMobileMenu = () => {
+    const navbarMenu = document.getElementById("navbarNav");
+    const toggleButton = document.querySelector(".navbar-toggler");
+
+    if (navbarMenu?.classList.contains("show")) {
+      navbarMenu.classList.remove("show");
+      toggleButton?.classList.add("collapsed");
+      toggleButton?.setAttribute("aria-expanded", "false");
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -23,7 +34,11 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
 
-        <a className="navbar-brand brand-logo" href="#home">
+        <a
+          className="navbar-brand brand-logo"
+          href="#home"
+          onClick={closeMobileMenu}
+        >
           <div className="logo-circle">KS</div>
           <span className="brand-name">Kirubashankar</span>
         </a>
@@ -46,43 +61,51 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#home" className="nav-link">
+              <a href="#home" className="nav-link" onClick={closeMobileMenu}>
                 Home
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#about" className="nav-link">
+              <a href="#about" className="nav-link" onClick={closeMobileMenu}>
                 About
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#skills" className="nav-link">
+              <a href="#skills" className="nav-link" onClick={closeMobileMenu}>
                 Skills
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#internship" className="nav-link">
+              <a
+                href="#internship"
+                className="nav-link"
+                onClick={closeMobileMenu}
+              >
                 Internship
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#projects" className="nav-link">
+              <a href="#projects" className="nav-link" onClick={closeMobileMenu}>
                 Projects
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#certifications" className="nav-link">
+              <a
+                href="#certifications"
+                className="nav-link"
+                onClick={closeMobileMenu}
+              >
                 Certifications
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#footer" className="nav-link">
+              <a href="#footer" className="nav-link" onClick={closeMobileMenu}>
                 Contact
               </a>
             </li>

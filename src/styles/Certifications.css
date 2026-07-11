@@ -114,8 +114,14 @@
 =========================== */
 
 @media (max-width: 992px) {
-  .section-title {
+  .certifications-section {
+    min-height: auto;
+    padding: 95px 15px 55px;
+  }
+
+  .certifications-section .section-title {
     font-size: 3rem;
+    line-height: 1.1;
   }
 
   .certificate-image-wrapper {
@@ -125,17 +131,65 @@
 
 @media (max-width: 768px) {
   .certifications-section {
-    min-height: auto;
-
-    padding: 80px 15px;
+    padding: 80px 15px 50px;
   }
 
-  .section-title {
+  .certifications-section .section-title {
     font-size: 2.5rem;
   }
 
   .certificate-image-wrapper {
     height: 220px;
+  }
+}
+
+@media (max-width: 575px) {
+  .certifications-section {
+    padding: 90px 12px 45px;
+  }
+
+  .certifications-section .section-title {
+    font-size: 2.15rem;
+    line-height: 1.12;
+  }
+
+  .certificate-card {
+    border-radius: 18px;
+  }
+
+  .certificate-image-wrapper {
+    height: min(220px, 62vw);
+  }
+
+  .certificate-content {
+    padding: 16px 12px;
+  }
+
+  .certificate-content h5 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 400px) {
+  .certifications-section {
+    padding: 80px 10px 40px;
+  }
+
+  .certifications-section .section-title {
+    font-size: 1.85rem;
+  }
+
+  .certificate-card {
+    border-radius: 16px;
+  }
+
+  .certificate-image-wrapper {
+    height: min(190px, 58vw);
+  }
+
+  .certificate-content h5 {
+    font-size: 0.95rem;
   }
 }
 

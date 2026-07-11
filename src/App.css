@@ -11,3 +11,22 @@ section{
     scroll-margin-top:0;
 }
 
+@media (max-width: 991px){
+    html{
+        scroll-padding-top:76px;
+    }
+
+    section{
+        scroll-margin-top:76px;
+    }
+}
+
+@media (max-width: 575px){
+    html{
+        scroll-padding-top:68px;
+    }
+
+    section{
+        scroll-margin-top:68px;
+    }
+}
