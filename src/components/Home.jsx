@@ -7,6 +7,7 @@ const Home = () => {
     <section
       id="home"
       className="home-section d-flex align-items-center justify-content-center"
+      onContextMenu={(e) => e.preventDefault()}
     >
       <div className="hero-card container">
         <div className="row align-items-center">
@@ -15,7 +16,13 @@ const Home = () => {
             className="col-md-5 text-center image-section"
             data-aos="fade-right"
           >
-            <img src={profile} alt="Profile" className="profile-img" />
+            <img
+              src={profile}
+              alt="Profile"
+              className="profile-img"
+              draggable="false"
+              onContextMenu={(e) => e.preventDefault()}
+            />
           </div>
 
           {/* Description */}

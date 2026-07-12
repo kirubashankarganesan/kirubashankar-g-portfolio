@@ -25,7 +25,11 @@ const Footer = () => {
             <div className="col-lg-7">
               <h3>Contact Information</h3>
 
-              <div className="contact-box">
+              <a
+                href="mailto:kirubashankarg2005@gmail.com"
+                className="contact-box"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <FaEnvelope className="contact-icon" />
 
                 <div>
@@ -33,7 +37,7 @@ const Footer = () => {
 
                   <h6>kirubashankarg2005@gmail.com</h6>
                 </div>
-              </div>
+              </a>
 
               <div className="contact-box">
                 <FaPhone className="contact-icon" />
