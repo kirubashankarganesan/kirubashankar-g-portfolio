@@ -45,7 +45,7 @@ const Home = () => {
 
             <div className="mt-4">
               <a
-                href={resume}
+                href="/Kirubashankar_G_Resume.pdf"
                 download="Kirubashankar_G_Resume.pdf"
                 className="btn btn-primary me-3"
               >
