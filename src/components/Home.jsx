@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
 import profile from "../assets/images/profile.jpg";
-import resume from "../assets/Kirubashankar_G_Resume.pdf";
 const Home = () => {
   return (
     <section
